@@ -98,33 +98,33 @@ input[type="Submit"]:hover {
       }
       .quote {
         position: relative;
-        padding: 40px 20px;
+        padding: 10px;
+        margin-top: 5px;
         font-style: italic;
         text-align: center; 
+        display: flex; /* Otetaan flex käyttöön */
+        justify-content: center; /* Teksti ja lainausmerkit keskitetään */
+        align-items: center; /* Asetetaan lainausmerkit pystysuuntaan keskelle */
       }
       
       .quote::before {
         content: '“'; 
-        font-size: 40px;
+        font-size: 2rem; /* Suhteellinen fonttikoko */
         color: rgb(4, 45, 69);
-        position: absolute;
-        left: 350px; 
-        top: 48%; 
-        transform: translateY(-50%);
+        margin-right: 10px; /* Jätä tilaa tekstin vierelle */
       }
       
       .quote::after {
         content: '”'; 
-        font-size: 40px;
+        font-size: 2rem; /* Sama suhteellinen fonttikoko */
         color: rgb(4, 45, 69);
-        position: absolute;
-        right: 350px; 
-        top: 50%; 
-        transform: translateY(-50%);
+        margin-left: 10px; /* Jätä tilaa tekstin vierelle */
       }
+      
+
       .flex-container {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
       }
       
