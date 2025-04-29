@@ -1,0 +1,260 @@
+body {
+    background-color: rgb(247, 247, 229)
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 16px;
+  }
+  p {
+    color: rgb(27, 103, 128)
+  }
+  h1 {
+    font-size: 2em;
+  }
+  table {
+    width: 50%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #8e6307;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: rgb(121, 176, 153);
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 800px; 
+}
+label {
+    font-weight: bold
+}
+input[type="text"],
+input[type="email"] {
+    padding: 8px;
+    border: 1px solid #795c26;
+    border-radius: 4px;
+}
+input [type="submit"] {
+    color: rgb(121, 176, 153);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="Submit"]:hover {
+    background-color:rgb(26, 129, 135)
+    }
+    input[type="Submit"] {
+      margin-top: 20px; 
+    }
+    .submit-button {
+        background-color: rgb(121, 176, 153);
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .submit-button:hover {
+        background-color: lightcoral;
+      }
+      .animation-box {
+        width: 50px;
+        height: 50px;
+        background-color: rgb(248, 176, 31);
+        position: relative;
+        animation: move 2s infinite alternate;
+    }
+    @keyframes move {
+        from {
+            left: 0;
+        }
+        to {
+            left: 100px;
+        }
+    }
+    .pseudo-list tr:nth-child(odd) {
+        background-color: rgb(106, 152, 167);
+    }
+    
+    .pseudo-list tr:nth-child(even) {
+        background-color: rgb(249, 228, 202);
+    }
+      
+      .quote {
+        position: relative;
+        padding: 10px;
+        margin-top: 5px;
+        font-style: italic;
+        text-align: center; 
+        display: flex; /* Otetaan flex käyttöön */
+        justify-content: center; /* Teksti ja lainausmerkit keskitetään */
+        align-items: center; /* Asetetaan lainausmerkit pystysuuntaan keskelle */
+      }
+      
+      .quote::before {
+        content: '“'; 
+        font-size: 2rem; /* Suhteellinen fonttikoko */
+        color: rgb(4, 45, 69);
+        margin-right: 10px; /* Jätä tilaa tekstin vierelle */
+      }
+      
+      .quote::after {
+        content: '”'; 
+        font-size: 2rem; /* Sama suhteellinen fonttikoko */
+        color: rgb(4, 45, 69);
+        margin-left: 10px; /* Jätä tilaa tekstin vierelle */
+      }
+      
+
+      .flex-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .box {
+        background-color: rgb(249, 228, 202);
+        padding: 20px;
+        text-align: center;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+      }
+      
+      .grid-item {
+        background-color: rgb(106, 152, 167);
+        padding: 20px;
+        text-align: center;
+      }
+      .responsive-box {
+        padding: 20px;
+        text-align: center;
+      }
+      
+      @media (max-width: 600px) {
+        .responsive-box {
+          background-color: lightcoral;
+        }
+      }
+      
+      @media (min-width: 601px) {
+        .responsive-box {
+          background-color: lightseagreen;
+        }
+      }
+      .responsive-container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      
+      .column {
+        flex: 1;
+        padding: 10px;
+        max-width: 600px; /* Asettaa vähimmäisleveyden sarakkeelle */
+      }
+      @media (max-width: 600px) {
+        .column {
+          flex: 100%;
+        }
+      }
+      .responsive-image {
+        max-width: 40%; /* Kuvan leveys ei ylitä sen sisältävää elementtiä */
+        height: auto; /* Säilyttää oikeat mittasuhteet */
+        display: block; 
+        margin: 0 /* Keskittää kuvan */
+          
+      }
+      .media-query-box {
+        padding: 20px;
+        text-align: center;
+      }
+      
+      @media (max-width: 600px) {
+        .media-query-box {
+          background-color: lightcoral;
+        }
+      }
+      
+      @media (min-width: 601px) {
+        .media-query-box {
+          background-color: #1e798e;
+        }
+
+      /* General navigation styling */
+.responsive-nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.responsive-nav .menu-toggle {
+    display: none;
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+.responsive-nav .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.responsive-nav .nav-list li {
+    margin: 0;
+}
+
+.responsive-nav .nav-list li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.responsive-nav .nav-list li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Responsive styling for small screens */
+@media (max-width: 600px) {
+    .responsive-nav .menu-toggle {
+        display: block;
+    }
+
+    .responsive-nav .nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+    }
+
+    .responsive-nav .nav-list.active {
+        display: flex;
+    }
+
+    .responsive-nav .nav-list li {
+        text-align: center;
+    }
+}
+      }
