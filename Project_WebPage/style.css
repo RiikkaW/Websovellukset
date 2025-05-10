@@ -1,0 +1,48 @@
+.navbar {
+    background-color: rgba(15, 113, 240, 0.7);
+    box-shadow: 0px 0px 15px rgba(15, 113, 240, 0.8); /* Pehmeä sininen hehku */
+    border: 2px solid rgba(15, 113, 240, 0.5);
+    position: relative;
+    z-index: 1000; /* Nostaa valikon muiden elementtien yläpuolelle */
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Jakaa alueen kahteen yhtä suureen osaan */
+    align-items: center; /* Keskittää sisällöt pystysuunnassa */
+    margin: 20px;
+}
+
+.image img {
+    max-width: 50%;
+    height: auto;
+    margin: 20px; /* Lisää tyhjää tilaa kuvan ympärille */
+}
+
+.responsive-box {
+  padding: 20px;
+  margin-top: 40px;
+  text-align: center;
+  background-color: rgba(15, 113, 240, 0.7);
+  box-shadow: 0px 0px 15px rgba(15, 113, 240, 0.8); 
+  border: 2px solid rgba(15, 113, 240, 0.5);
+}
+.card-group {
+    display: flex;
+    gap: 20px; /* Lisää väliä korttien väliin */
+}
+
+.carousel {
+    max-width: 500px; /* Muuttaa koko karusellin kokoa */
+    margin: 0 auto;
+}
+
+.carousel {
+    margin-top: 50px; /* Lisää väliä navigointivalikon ja karusellin väliin */
+}
+
+
+
+
+
+
+
