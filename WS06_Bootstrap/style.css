@@ -98,23 +98,23 @@ input[type="Submit"]:hover {
         margin-top: 5px;
         font-style: italic;
         text-align: center; 
-        display: flex; /* Otetaan flex käyttöön */
-        justify-content: center; /* Teksti ja lainausmerkit keskitetään */
-        align-items: center; /* Asetetaan lainausmerkit pystysuuntaan keskelle */
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
       }
       
       .quote::before {
         content: '“'; 
-        font-size: 2rem; /* Suhteellinen fonttikoko */
+        font-size: 2rem; 
         color: rgb(4, 45, 69);
-        margin-right: 10px; /* Jätä tilaa tekstin vierelle */
+        margin-right: 10px; 
       }
       
       .quote::after {
         content: '”'; 
-        font-size: 2rem; /* Sama suhteellinen fonttikoko */
+        font-size: 2rem; 
         color: rgb(4, 45, 69);
-        margin-left: 10px; /* Jätä tilaa tekstin vierelle */
+        margin-left: 10px; 
       }
       
 
@@ -165,10 +165,10 @@ input[type="Submit"]:hover {
       
     
       .responsive-image {
-        max-width: 100%; /* Kuvan leveys ei ylitä sen sisältävää elementtiä */
-        height: auto; /* Säilyttää oikeat mittasuhteet */
+        max-width: 100%; 
+        height: auto; 
         display: block; 
-        margin: 0; /* Keskittää kuvan */
+        margin: 0; 
           
       }
       .media-query-box {
