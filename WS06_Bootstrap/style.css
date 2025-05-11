@@ -195,4 +195,20 @@ input[type="Submit"]:hover {
     .responsive-image {
         margin-top: 20px; 
     }
+    .navbar {
+      background-color: #125b6f;
+    }
+    .navbar-nav .nav-link {
+      color: white 
+    }
+    .navbar-nav .nav-link.active {
+      color: white !important;
+  }
+  
+    
+  .navbar-nav .nav-link:hover {
+      color: lightblue;
+  }
+  
+  
     

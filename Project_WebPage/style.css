@@ -33,16 +33,62 @@
 
 .carousel {
     max-width: 500px; /* Muuttaa koko karusellin kokoa */
-    margin: 0 auto;
+    margin: 50px auto 0; /* Lisää väliä navigointivalikon ja karusellin väliin */
 }
 
-.carousel {
-    margin-top: 50px; /* Lisää väliä navigointivalikon ja karusellin väliin */
+.pseudo-list th, .pseudo-list td {
+    border: 1px solid #21868e; /* Lisää viivat solujen väliin */
+    padding: 10px;
+    text-align: left;
+}
+.pseudo-list {
+    width: 80%;
+    margin: 20px auto;
+    border-spacing: 0; /* Poistaa ylimääräisen välin */
+    border-radius: 10px; /* Pyöristetyt reunat */
+    overflow: hidden;
+    border: 2px solid #21868e; /* Lisää ulkoreunan */
 }
 
+.pseudo-list th {
+    background-color: lightseagreen; /* Otsikkorivin kiinteä väri */
+    color: white;
+    padding: 10px;
+}
 
+.pseudo-list tbody tr:nth-child(1) {
+    background: linear-gradient(to bottom, lightseagreen, #a0d6d6); /* Ensimmäinen rivi */
+}
 
+.pseudo-list tbody tr:nth-child(2) {
+    background: linear-gradient(to bottom, #a0d6d6, #ccecec); /* Toinen rivi */
+}
 
+.pseudo-list tbody tr:nth-child(3) {
+    background: linear-gradient(to bottom, #ccecec, #eafafa); /* Kolmas rivi */
+}
+
+/* Responsiivisuus mobiilissa */
+@media screen and (max-width: 600px) {
+    .pseudo-list, .pseudo-list tbody, .pseudo-list tr, .pseudo-list td, .pseudo-list th {
+        display: block;
+        width: 100%;
+    }
+    
+    .pseudo-list tr {
+        margin-bottom: 10px;
+        border-bottom: 2px solid #ccc; /* Erotus riveille mobiilissa */
+    }
+}
+h2, h3 {
+    color: rgb(15, 60, 73) !important;
+}
+h2 {
+    margin: 10px
+}
+body, html {
+    font-family: "Palatino Linotype / Georgia", sans-serif !important;
+}
 
 
 
