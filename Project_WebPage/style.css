@@ -11,13 +11,6 @@
     align-items: center; /* Keskittää sisällöt pystysuunnassa */
     margin: 20px;
 }
-
-.image img {
-    max-width: 50%;
-    height: auto;
-    margin: 20px; /* Lisää tyhjää tilaa kuvan ympärille */
-}
-
 .responsive-box {
   padding: 20px;
   margin-top: 40px;
@@ -84,11 +77,25 @@ h2, h3 {
     color: rgb(15, 60, 73) !important;
 }
 h2 {
-    margin: 10px
+    margin: 10px;
+    padding: 50px;
 }
+
 body, html {
     font-family: "Palatino Linotype / Georgia", sans-serif !important;
 }
+.container {
+    background-color: rgba(178, 200, 241, 0.8); /* Vaaleanharmaa taustaväri */
+    padding: 20px; /* Lisää vähän sisävälitystä */
+    border-radius: 10px; /* Pyöristetyt kulmat */
+}
+.card {
+    margin: 40px auto; /* Lisää ulkoista marginaalia ja keskittää kortin */  
+}
+
+
+
+
 
 
 
