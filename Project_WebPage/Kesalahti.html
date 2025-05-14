@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="fi">
   <head>
+    <link rel="icon" type="image/x-icon" href="./images/caravan.png">
+
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
    
-    <title>Riikka Wideniuksen kotisivut</title>
+    <title>Projektityö</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
   </head>
     <body>
@@ -41,6 +43,7 @@
         </div>
       </nav> 
     </header>
+    <main>
     <div class="container">
       <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
@@ -69,23 +72,30 @@
         </button>
       </div>    
     </div>
-    <main>
-    <div class="container my-5 border">
+    <div class="vehicles">
+      <img src="./images/car.png" class="car">
+      <img src="./images/caravan.png" class="caravan">
+  </div>
+    <div class="container my-5">
       <div class="row">
         <div class="col-md-8">
             <h3>Huoltorakennukset</h3>
-           <p>Ruokkeen Lomakäylässä on uusi hieno huoltorakennus, jossa on WC:t ja perhesuihku sekä vauvan hoitopöytä. Huoltorakennuksessa on ilmastointi ja pieni keittiö mihin mahtuu kolme perhekuntaa syömään tai laittamaan ruokaa ja tiskaamaan. On myös mukavaa, että siellä on tiskirätti ja harja sekä tiskipesuaine. Et siis välttämättä tarvitse omia mukaan. Keittiö on hyvin varusteltu: sieltä löytyy uuni, liesi, mikro ja tarvittavat astiat. Erityistä plussaa on ilmastointi ja perhesuihku.
+           <p>Ruokkeen Lomakäylässä on uusi hieno huoltorakennus, joka koostuu kahdesta osasta. Toisessa päässä on usempi suihku ja vessat (miesten ja naisten puoli erikseen).<br<br>
+             Toisessa päässä on rakennus, jossa on WC sekä perhesuihku + WC ja vauvan hoitopöytä.<br><br>
+             Rakennuksessa on keittiö, jossa on kaksi uunia + liedet. Tiskauspisteitä on peräti kolme ja tiskiharjat, pesuaine ja rätti löytyvät. Keittiö on kaikkinensa hyvin varusteltu: sieltä löytyy uuni, liesi, mikro ja tarvittavat astiat.<br><br>
+             Tilaan mahtuu kolme perhekuntaa syömään (pirttikalustot).<br><br>
+             Ilmastointi ansaitsee erityismaininnan. Tilan on mielyttävän viileä kesähelteillä.
           </p>
-          </div>
+        </div>
             <div class="col-md-4">
               <img 
               src="./images/huoltorakennus.jpg"
               alt="tiskausta huoltorakennuksessa"
               class="img-fluid">
-          </div>
-        </div>
+            </div>
+      </div>
     </div>
-      <div class="container my-5 border">
+      <div class="container my-5">
         <div class="row">
           <div class="col-md-6">
               <img 
@@ -95,7 +105,11 @@
           </div>
           <div class="col-md-6">
             <h3>Alueesta</h3>
-          Leirintäalue sijaitsee Puruveden kirkkaan vesistön läheisyydessä. Alueelta löytyy grillikota, jossa on hyvin tilaa usemmankin perhekunnan grillailla. Kodalta avautuu kaunis rantamaisema. Hiekkarannn toisessa päässä on myös toinen avotulentekopaikka. Vesi on kristallin kirjasta ja ranta on matala eli pienempienkin lasten kanssa siinä on turvallista uida sillä ranta ei ole äkkisyvä. Järvessä on lapsille liukumäki. 
+          Leirintäalue sijaitsee Puruveden kirkkaan vesistön ääressä. Siellä on oma ravintola, josta saa kohtuuhintaisen ja hyvän lounaan. Ravintolalla on anniskeluoikeus ja heillä on myynnissä virvokkeita ja jäätelö sekä pieni valikoima peruselintarvikkeita.<br><br>
+          Alueelta löytyy grillikota, jossa on hyvin tilaa usemmankin perhekunnan grillailla. Kodalta avautuu kaunis rantamaisema. Hiekkarannan toisessa päässä on myös avotulentekopaikka.<br><br>
+          Vesi on kristallinkirkasta ja ranta on matala hyvän matkaa eli pienempienkin lasten kanssa siinä on turvallista uida. Järvessä on lapsille liukumäki. Tämän alueen erityisyys piileekin upeassa hiekkarannassa ja hyvässä järvessä. Voit myös vuokrata oman saunavuoron. Siihen kuuluu oma uimalaituri. Leirintäalueella ei ole yhteissaunavuoroja.<br><br>
+          Lomakylässä on myös minigolf, lasten leikkipaikka ja metsässä kulkeva frisbeegolfrata. Ravintolalla järjestetään kesäilaisin bingoa mikä on ollut lasten suosikki. Palkinnot ovat hienoja! Voitimme kerran koko perheelle frisbeegolfvuoron. 
+
           </div>
         </div>
       </div>
@@ -111,12 +125,12 @@
             </tr>
             <tr>
                 <td>Kahvila Matamin Lumo</td>
-                <td>Pittoreski kesäkahvila ja vertaansa vailla olevat herkut!</td>
+                <td>Idyllinen kesähavila puutalossa, jonka vehreässä puutarhassa voi nauttia superherkulliset leivonnaiset!</td>
                 <td><a href="https://www.kotikarjala.fi/article-6.6.59441.6070d5e0e8">Lue artikkeli Koti-Karjalan sivuilta</a></td>
             </tr>
             <tr>
                 <td>Tohmajärvi</td>
-                <td>Tee päiväretki Suomen kansallismaisemissa</td>
+                <td>Tee päiväretki Suomen kansallismaisemissa Pohois-Karjalassa.</td>
                 <td><a href="https://visittohmajarvi.fi/">Lue lisää Visit Tohmajävi-sivuilta</a></td>
             </tr>
         </tbody>
@@ -125,9 +139,10 @@
     <footer>
       <div class="responsive-box">
       <p>Copyright 2025- All rights reserved</p>
-      </div>
       <p>Icons by <a href="https://www.flaticon.com/free-icons/summer" title="summer icons">Summer icons created by Freepik - Flaticon</a>
-    </footer> 
+        <a href="https://www.flaticon.com/free-icons/car" title="car icons">Car icons created by Konkapp - Flaticon</a></p>
+      </div>
+      </footer> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
   </body>
 </html>

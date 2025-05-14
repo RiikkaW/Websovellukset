@@ -73,8 +73,14 @@
         border-bottom: 2px solid #ccc; /* Erotus riveille mobiilissa */
     }
 }
-h2, h3 {
+h1 {
+    text-align: center;
+    padding: 20px;
+}    
+
+h1, h2, h3 {
     color: rgb(15, 60, 73) !important;
+
 }
 h2 {
     margin: 10px;
@@ -85,17 +91,86 @@ body, html {
     font-family: "Palatino Linotype / Georgia", sans-serif !important;
 }
 .container {
-    background-color: rgba(178, 200, 241, 0.8); /* Vaaleanharmaa taustaväri */
-    padding: 20px; /* Lisää vähän sisävälitystä */
-    border-radius: 10px; /* Pyöristetyt kulmat */
+    background-color: rgba(178, 200, 241, 0.8); 
+    padding: 20px; 
+    border-radius: 10px; 
 }
 .card {
-    margin: 40px auto; /* Lisää ulkoista marginaalia ja keskittää kortin */  
+    margin: 40px auto;  
+}
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+h1 {
+    opacity: 0; /* Piilottaa otsikon aluksi */
+    animation: fadeIn 2s forwards; /* Käyttää fadeIn-animaatiota */
 }
 
 
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+    animation-delay: 0.5s; /* Viive ennen animaation alkamista */
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards; /* Pitää animaation lopputilan */
+}
+.vehicles {
+    position: relative;
+    width: 100px;
+    animation: move 8s forwards linear;
+    z-index: 0; /* Ei peitä muita elementtejä */
+}
 
 
+.car {
+    position: absolute;
+    width: 40px;
+    left: 0; 
+}
+
+.caravan {
+    position: absolute;
+    width: 40px;
+    left: -40px; 
+}
+
+@keyframes move {
+    from { left: 0; }
+    to { left: 100vw; } /* Siirtyy täysin näytön oikeaan reunaan */
+}
+.filter-image {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+  
+  .filter-image:hover {
+    filter: grayscale(0%);
+  }
+  .card {
+    transition: all 0.3s ease-in-out; /* Pehmeä siirtymä */
+}
+
+.card:hover {
+    background-color: #f0f8ff; /* Muuta taustaväriä */
+    transform: scale(1.05); /* Nostaa korttia hieman */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Lisää varjoa */
+}
+.quote {
+    position: relative;
+    padding-left: 25px;
+    font-style: italic;
+    color: rgb(15, 60, 73)
+}
+
+.quote::before {
+    content: '“'; /* Koristeellinen lainausmerkki */
+    font-size: 40px;
+    position: absolute;
+    left: -2px;
+    top: -5px;
+    color: rgb(15, 60, 73)
+}
 
 
 
