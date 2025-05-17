@@ -5,12 +5,7 @@
     position: relative;
     z-index: 1000; /* Nostaa valikon muiden elementtien yläpuolelle */
 }
-.grid-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr; /* Jakaa alueen kahteen yhtä suureen osaan */
-    align-items: center; /* Keskittää sisällöt pystysuunnassa */
-    margin: 20px;
-}
+
 .responsive-box {
   padding: 20px;
   margin-top: 40px;
@@ -19,58 +14,53 @@
   box-shadow: 0px 0px 15px rgba(15, 113, 240, 0.8); 
   border: 2px solid rgba(15, 113, 240, 0.5);
 }
-.card-group {
-    display: flex;
-    gap: 20px; /* Lisää väliä korttien väliin */
-}
 
 .carousel {
-    max-width: 500px; /* Muuttaa koko karusellin kokoa */
-    margin: 50px auto 0; /* Lisää väliä navigointivalikon ja karusellin väliin */
+    max-width: 500px; 
+    margin: 50px auto 0; 
 }
 
-.pseudo-list th, .pseudo-list td {
-    border: 1px solid #21868e; /* Lisää viivat solujen väliin */
+.colorful-list th, .colorful-list td {
+    border: 1px solid #21868e;
     padding: 10px;
     text-align: left;
 }
-.pseudo-list {
+.colorful-list {
     width: 80%;
     margin: 20px auto;
-    border-spacing: 0; /* Poistaa ylimääräisen välin */
-    border-radius: 10px; /* Pyöristetyt reunat */
+    border-spacing: 0;
+    border-radius: 10px; 
     overflow: hidden;
-    border: 2px solid #21868e; /* Lisää ulkoreunan */
+    border: 2px solid #21868e; 
 }
 
-.pseudo-list th {
-    background-color: lightseagreen; /* Otsikkorivin kiinteä väri */
+.colorful-list th {
+    background-color: lightseagreen; 
     color: white;
     padding: 10px;
 }
 
-.pseudo-list tbody tr:nth-child(1) {
-    background: linear-gradient(to bottom, lightseagreen, #a0d6d6); /* Ensimmäinen rivi */
+.colorful-list tbody tr:nth-child(1) {
+    background: linear-gradient(to bottom, lightseagreen, #a0d6d6); 
 }
 
-.pseudo-list tbody tr:nth-child(2) {
-    background: linear-gradient(to bottom, #a0d6d6, #ccecec); /* Toinen rivi */
+.colorful-list tbody tr:nth-child(2) {
+    background: linear-gradient(to bottom, #a0d6d6, #ccecec); 
 }
 
-.pseudo-list tbody tr:nth-child(3) {
-    background: linear-gradient(to bottom, #ccecec, #eafafa); /* Kolmas rivi */
+.colorful-list tbody tr:nth-child(3) {
+    background: linear-gradient(to bottom, #ccecec, #eafafa); 
 }
 
-/* Responsiivisuus mobiilissa */
 @media screen and (max-width: 600px) {
-    .pseudo-list, .pseudo-list tbody, .pseudo-list tr, .pseudo-list td, .pseudo-list th {
+    .colorful-list, .colorful-list tbody, .colorful-list tr, .colorful-list td, .colorful-list th {
         display: block;
         width: 100%;
     }
     
-    .pseudo-list tr {
+    .colorful-list tr {
         margin-bottom: 10px;
-        border-bottom: 2px solid #ccc; /* Erotus riveille mobiilissa */
+        border-bottom: 2px solid #ccc; 
     }
 }
 h1 {
@@ -82,14 +72,12 @@ h1, h2, h3 {
     color: rgb(15, 60, 73) !important;
 
 }
+
 h2 {
     margin: 10px;
     padding: 50px;
 }
 
-body, html {
-    font-family: "Palatino Linotype / Georgia", sans-serif !important;
-}
 .container {
     background-color: rgba(178, 200, 241, 0.8); 
     padding: 20px; 
@@ -111,7 +99,6 @@ h1 {
 
 .fade-in {
     animation: fadeIn 1.5s ease-in-out;
-    animation-delay: 0.5s; /* Viive ennen animaation alkamista */
     animation-delay: 0.5s;
     animation-fill-mode: forwards; /* Pitää animaation lopputilan */
 }
@@ -171,6 +158,12 @@ h1 {
     top: -5px;
     color: rgb(15, 60, 73)
 }
+
+.img-fluid.full-width {
+    width: 100vw; /* koko näytön leveys */
+    height: auto;
+  }
+  
 
 
 
